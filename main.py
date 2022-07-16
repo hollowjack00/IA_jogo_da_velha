@@ -6,7 +6,7 @@ from minimaxcode import movimentoIA
 jogador = 0  # jogador 1
 board = criarBoard()
 ganhador = verificaGanhador(board)
-while(not ganhador):
+while(not ganhador):  # estrutura de repetição estabelecida para o jogo
     printBoard(board)
     print("===================")
     if(jogador == 0):
