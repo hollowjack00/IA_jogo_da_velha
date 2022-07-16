@@ -2,7 +2,7 @@ branco = " "
 token = ["X", "O"]
 
 
-def criarBoard():
+def criarBoard():  # cria o quadro branco do jogo
     board = [
         [branco, branco, branco],
         [branco, branco, branco],
@@ -11,13 +11,14 @@ def criarBoard():
     return board
 
 
-def printBoard(board):
+def printBoard(board):  # estabelece as divisões dos quadrados
     for i in range(3):
         print("|".join(board[i]))
         if(i < 2):
             print("------")
 
 
+# no jogo pelo terminal, estabelece os valores que podem ser jogados
 def getInputValido(mensagem):
     try:
         n = int(input(mensagem))
@@ -31,18 +32,18 @@ def getInputValido(mensagem):
         return getInputValido(mensagem)
 
 
-def verificaMovimento(board, i, j):
+def verificaMovimento(board, i, j):  # verifica o movimento realizado pelo jogador
     if(board[i][j] == branco):
         return True
     else:
         return False
 
 
-def fazMovimento(board, i, j, jogador):
+def fazMovimento(board, i, j, jogador):  # realiza o movimento inserido pelo jogador
     board[i][j] = token[jogador]
 
 
-def verificaGanhador(board):
+def verificaGanhador(board):  # identificar o ganhador
     # identificar linhas
     for i in range(3):
         if(board[i][0] == board[i][1] and board[i][1] == board[i][2] and board[i][0] != branco):
@@ -57,7 +58,7 @@ def verificaGanhador(board):
     if(board[0][0] != branco and board[0][0] == board[1][1] and board[1][1] == board[2][2]):
         return board[0][0]
 
-    # diagonal secundaria
+    # identifica diagonal secundaria
     if(board[0][2] != branco and board[0][2] == board[1][1] and board[1][1] == board[2][0]):
         return board[0][2]
 
