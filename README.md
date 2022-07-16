@@ -7,6 +7,3 @@ Esse projeto foi feito na liguagem de programação Python, para executar é nec
 ## Authors
  
 * **DOUGLAS FERREIRA**
- 
-
-Thanks to visiting me and good coding!
