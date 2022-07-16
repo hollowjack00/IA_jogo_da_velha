@@ -2,13 +2,11 @@
  
 ## How to use
  
-Here will be the images and descriptions. Principal content.
- 
+Esse projeto foi feito na liguagem de programação Python, para executar é necessário uma IDE-Integrated Development Environment e instalar a biblioteca chamada Pygame utilizada em jogos e interfaces graficas,   -pip install pygame
  
 ## Authors
  
 * **DOUGLAS FERREIRA**
  
- 
-Please follow github and join us!
+
 Thanks to visiting me and good coding!
