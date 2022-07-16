@@ -21,7 +21,7 @@ def draw_board(win, board):
 
     for i in range(3):
         for j in range(3):
-            font = pygame.font.SysFont("comicsans", 100)
+            font = pygame.font.SysFont("gotcha", 100)
 
             x = j * tamanho
             y = i * tamanho
